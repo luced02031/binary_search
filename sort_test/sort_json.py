@@ -16,75 +16,75 @@ def sort_json(students):
         if isinstance(filter_by, str) and filter_by == 'grades' and filter_by != "":
             if option and option != 0:
                 if isinstance(option, int) and option == 1:
-                    for i in range(len(students)):
-                        for j in range(i + 1, len(students)):
-                            if students[i]['grades'] > students[j]['grades']:
-                                students[i], students[j] = students[j], students[i]
+                    for student in range(len(students)):
+                        for value in range(student + 1, len(students)):
+                            if students[student]['grades'] > students[value]['grades']:
+                                students[student], students[value] = students[value], students[student]
 
                 elif isinstance(option, int) and option == 2:
-                    for i in range(len(students)):
-                        for j in range(i + 1, len(students)):
-                            if students[i]['grades'] < students[j]['grades']:
-                                students[i], students[j] = students[j], students[i]
+                    for student in range(len(students)):
+                        for value in range(student + 1, len(students)):
+                            if students[student]['grades'] < students[value]['grades']:
+                                students[student], students[value] = students[value], students[student]
             else:
                 print("No se ha ingresado una opcion valida")
         elif isinstance(filter_by, str) and filter_by == 'age' and filter_by != "":
             if option and option != 0:
                 if isinstance(option, int) and option == 1:
-                    for i in range(len(students)):
-                        for j in range(i + 1, len(students)):
-                            if students[i]['age'] > students[j]['age']:
-                                students[i], students[j] = students[j], students[i]
+                    for student in range(len(students)):
+                        for value in range(student + 1, len(students)):
+                            if students[student]['age'] > students[value]['age']:
+                                students[student], students[value] = students[value], students[student]
 
                 elif isinstance(option, int) and option == 2:
-                    for i in range(len(students)):
-                        for j in range(i + 1, len(students)):
-                            if students[i]['age'] < students[j]['age']:
-                                students[i], students[j] = students[j], students[i]
+                    for student in range(len(students)):
+                        for value in range(student + 1, len(students)):
+                            if students[student]['age'] < students[value]['age']:
+                                students[student], students[value] = students[value], students[student]
             else:
                 print("No se ha ingresado una opcion valida")
         elif isinstance(filter_by, str) and filter_by == 'name' and filter_by != "":
             if option and option != 0:
                 if isinstance(option, int) and option == 1:
-                    for i in range(len(students)):
-                        for j in range(i + 1, len(students)):
-                            if students[i]['name'] > students[j]['name']:
-                                students[i], students[j] = students[j], students[i]
+                    for student in range(len(students)):
+                        for value in range(student + 1, len(students)):
+                            if students[student]['name'] > students[value]['name']:
+                                students[student], students[value] = students[value], students[student]
 
                 elif isinstance(option, int) and option == 2:
-                    for i in range(len(students)):
-                        for j in range(i + 1, len(students)):
-                            if students[i]['name'] < students[j]['name']:
-                                students[i], students[j] = students[j], students[i]
+                    for student in range(len(students)):
+                        for value in range(student + 1, len(students)):
+                            if students[student]['name'] < students[value]['name']:
+                                students[student], students[value] = students[value], students[student]
             else:
                 print("No se ha ingresado una opcion valida")
             if option and option != 0:
                 if isinstance(option, int) and option == 1:
-                    for i in range(len(students)):
-                        for j in range(i + 1, len(students)):
-                            if students[i]['name'] > students[j]['name']:
-                                students[i], students[j] = students[j], students[i]
+                    for student in range(len(students)):
+                        for value in range(student + 1, len(students)):
+                            if students[student]['name'] > students[value]['name']:
+                                students[student], students[value] = students[value], students[student]
 
                 elif isinstance(option, int) and option == 2:
-                    for i in range(len(students)):
-                        for j in range(i + 1, len(students)):
-                            if students[i]['name'] < students[j]['name']:
-                                students[i], students[j] = students[j], students[i]
+                    for student in range(len(students)):
+                        for value in range(student + 1, len(students)):
+                            if students[student]['name'] < students[value]['name']:
+                                students[student], students[value] = students[value], students[student]
             else:
                 print("No se ha ingresado una opcion valida")
         elif isinstance(filter_by, str) and filter_by == 'lastname' and filter_by != "":
             if option and option != 0:
                 if isinstance(option, int) and option == 1:
-                    for i in range(len(students)):
-                        for j in range(i + 1, len(students)):
-                            if students[i]['lastname'] > students[j]['lastname']:
-                                students[i], students[j] = students[j], students[i]
+                    for student in range(len(students)):
+                        for value in range(student + 1, len(students)):
+                            if students[student]['lastname'] > students[value]['lastname']:
+                                students[student], students[value] = students[value], students[student]
 
                 elif isinstance(option, int) and option == 2:
-                    for i in range(len(students)):
-                        for j in range(i + 1, len(students)):
-                            if students[i]['lastname'] < students[j]['lastname']:
-                                students[i], students[j] = students[j], students[i]
+                    for student in range(len(students)):
+                        for value in range(student + 1, len(students)):
+                            if students[student]['lastname'] < students[value]['lastname']:
+                                students[student], students[value] = students[value], students[student]
             else:
                 print("No se ha ingresado una opcion valida")
         else:
